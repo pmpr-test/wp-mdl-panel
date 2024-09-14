@@ -1,0 +1,33 @@
+<h2 id="panel_verification">{{ title|raw }}</h2>
+<table class="form-table">
+    {% for field in fields %}
+        <tr>
+            <th>
+                <label for="{{ field.id|esc_attr }}">{{ field.label|raw }}</label>
+            </th>
+            <td>{{ field.html|raw }}</td>
+        </tr>
+    {% endfor %}
+    {% if verifications is not empty %}
+        <tr>
+            <td class="p-0">
+                <h3>{{ verifications_title|raw }}</h3>
+            </td>
+        </tr>
+        {% for field in verifications %}
+            <tr>
+                <th>
+                    <label for="{{ field.id|esc_attr }}">{{ field.label|raw }}</label>
+                </th>
+                <td>
+                    <div class="mb-2">
+                        {{ field.html|raw }}
+                    </div>
+                    <div class="d-flex justify-content-between flex-column ml-0 ml-md-4">
+                        {{ field.value|raw }}
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+</table>
