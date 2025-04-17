@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             67e16939655a5             |
+    |             6800fbbce142e             |
     |_______________________________________|
 */
  namespace Pmpr\Module\Panel\REST; use Pmpr\Common\Foundation\REST\RESTRegister; class REST extends RESTRegister { public function gigwcakmiyayoigw() { $this->ogyceaekywowkqsc(WP::symcgieuakksimmu())->ogyceaekywowkqsc(Icon::symcgieuakksimmu())->ogyceaekywowkqsc(Auth::symcgieuakksimmu())->ogyceaekywowkqsc(Router::symcgieuakksimmu())->ogyceaekywowkqsc(Profile::symcgieuakksimmu())->ogyceaekywowkqsc(Setting::symcgieuakksimmu()); } }
